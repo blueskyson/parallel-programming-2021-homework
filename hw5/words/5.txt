@@ -1,0 +1,47 @@
+Recently, Daniel Lemire tackled the topic of selecting N distinct numbers at random.
+In the case we want sorted output,
+an obvious solution presents itself: sorting randomly chosen values and de-duplicating the list,
+which is easy since identical values are now adjacent. 1
+While Daniel suggests a clever method of avoiding a sort entirely 2,
+I’m also interested in they why for the underlying performace of the sort method:
+it takes more than 100 ns per element,
+which means 100s of CPU clock cycles and usually even more instructions than that (on a superscalar processor)!
+As a sanity check, a quick benchmark (perf record ./bench && perf report) shows that more than 90% of the time spent in this approach is in the sorting routine,
+qsort - so we are right to focus on this step,
+rather than say the de-duplication step or the initial random number generation.
+This naturally, this raises the question: how fast is qsort when it comes to sorting integers and can we do better?
+All of the code for this post is available on GitHub,
+so if you’d like to follow along with the code open in an editor,
+go right ahead (warning: there are obviously some spoilers if you dig through the code first).
+Under those guidelines, which were laid out at a City Hall press briefing and posted on the city’s website, tens of thousands of businesses in the Big Apple will have to maintain proof of vaccination records for employees, as well as records on whether workers were granted a reasonable accommodation for refusing the vaccine — whether it be for medical or religious reasons.
+
+Businesses will have to verify proof of vaccination before permitting workers from entering the workplace and maintain a record of that verification. Outside contractors working at a job site will also be required to provide proof of vaccination through their employers.
+
+“This is a first in the nation action with respect to the private sector vaccine requirement and it is necessary on the grounds of protecting public health and safety,” said city Health Commissioner Dr. Dave Chokshi.
+
+De Blasio suggested the city would not take an aggressive approach to enforcement — at least initially.
+
+“We want a cooperative, positive approach,” he said of the city’s enforcement efforts around the new mandate. “If we find a problem, we simply ask the business to address it, to fix it.”
+Businesses around the city aren’t viewing the new guidelines as all that simple, though.
+
+Thomas Grech, president of the Queens Chamber of Commerce, called the $1,000 fines “ridiculous” and expressed dismay for businesses, which will now have to determine whether employees are eligible for medical or religious exemptions.
+
+“Our small businesses are now being asked to be medical experts to determine whether people qualify for a medical exemption and will have to determine whether an employee is exempt for religious reasons, putting at risk relationships between employers and their employees,” he said. “It’s another smack in the head to small businesses as they’re trying to keep their heads above water.”
+
+Business leaders weren’t the only ones left fuming by the city’s new guidance Wednesday — which comes just two weeks before de Blasio leaves office.
+
+New York City Council Member Joe Borelli (R-Staten Island) also slammed the mayor for the move.
+“The mayor doesn’t have the authority to knock down the door of an insurance agency and round up people at the water cooler,” he said. “It turns out people have rights, and many businesses are not licensed or regulated by city government. The mayor could have announced this while talking to a wall.”
+
+The city’s top lawyer, Corporation Counsel Georgia Pestana, countered that the city does have the authority to issue and enforce the mandate. She also noted that employers with four or more employees should already be equipped to determine whether or not an employee has a reasonable accommodation.
+
+“It’s the law that when somebody can’t comply with a requirement or needs an accommodation to be able to do their work, they — employers — undertake the reasonable accommodation process,” she said. “So, it’s not a foreign concept to the overwhelming number of employers in New York City.”
+While that might be so, Randy Peers, president of the Brooklyn Chamber of Commerce, predicted it would be a lot for businesses to digest in a relatively short time span.
+
+“It’s a bad policy, and it’s not going to solve for COVID,” he said. “It could make the already bad situation for small businesses worse.”
+
+Peers said that not only does having to determine reasonable exemptions for COVID vaccines put more of a burden on business owners, but having to terminate employees because they’re not vaccinated will also spell trouble when employers are already struggling to identify new hires.
+
+Given that the mandate will begin taking effect on Dec. 27, just four days before de Blasio steps down, Peers said he’s hopeful that Mayor-elect Eric Adams will reconsider it.
+
+“My hope is that one of the first things the incoming Adams administration looks at is this ridiculous policy,” he said. “It just doesn’t make any sense.”

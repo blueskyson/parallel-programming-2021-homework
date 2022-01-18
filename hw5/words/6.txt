@@ -1,0 +1,42 @@
+1. Count Sort
+Count sort is a simple serial sorting algorithm that can be implemented as follows:
+The basic idea is that for each element a[i] in the list a,
+we count the number of elements in the list that are less than a[i].
+Then we insert a[i] into a temporary list using the subscript determined by the count.
+There’s a slight problem with this approach when the list contains equal elements,
+since they could get assigned to the same slot in the temporary list.
+The code deals with this by incrementing the count for equal elements on the basis of the subscripts.
+If both a[i] == a[j] and j <i, then we count a[j] as being “less than” a[i].
+After the algorithm has completed,
+we overwrite the original array with the temporary array using the string library function memcpy.
+Fox News stars Sean Hannity and Laura Ingraham finally offered explanations for their direct coordination with then-President Donald Trump’s chief of staff during the Jan. 6 attack on the U.S. Capitol.
+
+Their reasoning, however, failed to address disparities between what they texted privately and what was said on Fox News’ airwaves.
+
+The congressional committee investigating the insurrection reported Monday that it had text messages sent from Hannity and Ingraham to Mark Meadows, seemingly acknowledging Trump loyalists were invading the U.S. Capitol to stop the certification of Joe Biden’s election win.
+
+“Hey Mark, the president needs to tell people in the Capitol to go home,” Ingraham texted. “This is hurting all of us...he is destroying his legacy.”
+
+After saying nothing of the texts on air Monday, Ingraham used her Tuesday night show to claim her advice to Trump and what she was expressing publicly were one and the same.
+Ingraham did send a series of tweets condemning the violence in real time. Though after privately acknowledging to Meadows that Trump had the power to call off his followers, she went on television that night trying to shift the blame.
+
+“Earlier today, the Capitol was under siege by people who can only be described as antithetical to the MAGA movement,” Ingraham reported. “Now, they were likely not all Trump supporters, and there are some reports that Antifa sympathizers may have been sprinkled throughout the crowd.”
+
+There is no evidence that the violence at the Capitol was perpetrated by anyone other than Trump supporters who were upset about the outcome of the 2020 election. Fox News is involved in a pair of billion-dollar lawsuits with voting technologies companies that allege the network was complicit in the spreading of the conspiracy theory that the vote count was rigged.
+
+After the uprising, Ingraham reported falsely that there remained “legitimate concerns” over how the election was conducted.
+
+Hannity also texted on Jan. 6 to ask Meadows if he could compel Trump to make a statement asking people to leave the Capitol. Shorty after 4 p.m. that day — following more than three hours of hand-to-hand combat between Trump loyalists and law enforcement officials — the 45th president finally made that statement. The uprising soon wound down.
+
+He squarely reported on the night of the insurrection that those who committed crimes should be held accountable. But the “Hannity” host also said the people who stormed the Capitol could be right wingers or left wingers, despite his message to Meadows indicating those individuals would listen to Trump if he intervened. Hannity further raised questions about the integrity of the election — which was free and fair — calling it a “train wreck.”
+
+Both Hannity and Ingraham went into their routines about “the media” and cried foul Tuesday.
+“Where is the outrage in ‘the media’ over my private text messages being released again publicly?” Hannity asked. “Do we believe in privacy in this country?”
+
+Ingraham blamed “left wing media hacks” for mischaracterizing her actions and accused the committee investigating Jan. 6 of participating in “revenge and defamation.”
+
+“Fox & Friends” host Brian Kilmeade also reached out to Meadows as the chaos on Capitol Hill was raging.
+
+“Please, get him on TV,” Kilmeade pleaded. “Destroying everything you have accomplished.”
+
+He said nothing about the text on his Tuesday morning program. Fox News reported its anchors stand by their text messages.

@@ -1,0 +1,8 @@
+2. Producer-Consumer
+Given a keyword file that contains many keywords.
+Use OpenMP to implement a producer-consumer program in which some of the threads are producers and others are consumers.
+The producers read text from a collection of files, one per producer.
+They insert lines of text into a single shared queue (please implement your own thread safe queue) NEW.
+The consumers take the lines of text and tokenize them. Tokens are “words” separated by white space.
+When a consumer finds a token that is keyword, the keyword count increases one.
+Please print each keyword and its count.

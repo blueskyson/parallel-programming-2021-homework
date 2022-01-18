@@ -1,0 +1,6 @@
+Please answer the following questions:
+If we try to parallelize the for i loop (the outer loop), which variables should be private and which should be shared?
+If we parallelize the for i loop using the scoping you speciﬁed in the previous part,are there any loop-carried dependences? Explain your answer.
+Can we parallelize the call to memcpy? Can we modify the code so that this part of the function will be parallelizable?
+Write a C program that includes a parallel implementation of Count sort.
+How does the performance of your parallelization of Count sort compare to serial Count sort? How does it compare to the serial qsort library function?

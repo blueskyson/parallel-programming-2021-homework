@@ -1,8 +1,8 @@
 # parallel-programming-2021-homework
 
-NCKU PARALLEL PROGRAMMING IN C FOR MULTIPROCESSOR
+PARALLEL PROGRAMMING IN C FOR MULTIPROCESSOR from NCKU.
 
-This repository contains some example of MPI, OpenMP, Pthread.
+This repository contains some examples of MPI, OpenMP, Pthread.
 
 - **HW1**: MPI
   + Circuit Satisfiability Problem
